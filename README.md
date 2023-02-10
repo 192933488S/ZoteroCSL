@@ -1,2 +1,2 @@
-# ZoteroCLS
-Zotero CLS for German Wikipedia
+# ZoteroCSL
+Zotero CSL for German Wikipedia
