@@ -2,14 +2,15 @@
 <style
 	xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="de-DE">
 	<info>
-		<title>Wikipedia Templates (https://de.wikipedia.org/wiki/Vorlage:Literatur) - 2022f</title>
+		<title>Wikipedia Templates (https://de.wikipedia.org/wiki/Vorlage:Literatur) - 2022g</title>
 		<id>https://www.zotero.org/styles/wikipedia-templates_Vorlage.Literatur</id>
 		<!-- Referenzen & Dokumentation -->
 		<link href="https://www.zotero.org/styles/wikipedia-templates_Vorlage.Literatur" rel="self"/>
 		<link href="https://de.wikipedia.org/wiki/Vorlage:Literatur" rel="documentation"/>
+		<link href="https://de.wikipedia.org/wiki/Vorlage:Patent" rel="documentation"/>
+		<link href="https://de.wikipedia.org/wiki/Vorlage%3AInternetquelle" rel="documentation"/>
 		<link href="https://de.wikipedia.org/wiki/Benutzer:Cepheiden/Zotero" rel="documentation"/>
 		<link href="https://de.wikipedia.org/wiki/Benutzer:17387349L8764/Zotero2WikipediaDE" rel="documentation"/>
-		<link href="https://de.wikipedia.org/wiki/Vorlage:Patent" rel="documentation"/>
 		<link href="https://docs.citationstyles.org" rel="documentation"/>
 		<link href="https://jsonformatter.org/xml-formatter" rel="documentation"/>
 		<link href="https://validator.citationstyles.org" rel="documentation"/>
@@ -22,13 +23,13 @@
 		</contributor>
 		<category field="generic-base"/>
 		<category citation-format="author-date"/>
-		<updated>2022-11-29T12:00:00+00:00</updated>
+		<updated>2022-12-27T12:00:00+00:00</updated>
 		<summary>Style following de.Wikipedia WP:Zitierregeln</summary>
 		
 <!--
 * CSL-Skipt zum Export von Datenbankeinträgen in Zotero in eine Vorlage (Literatur, Internetquelle und Patent) der deutschsprachigen Wikipedia
-* Version: 0.26, 2022f
-* Datum: 2022-11-29
+* Version: 0.31, 2022g
+* Datum: 2022-12-27
 * Autor: Cepheiden, 17387349L8764
 * Log: https://de.wikipedia.org/wiki/Benutzer:17387349L8764/Zotero2WikipediaDE
 -->
@@ -138,6 +139,7 @@
 			<choose>
 				<!-- ########################################################### -->
 				<!-- Patente -->
+				<!-- https://de.wikipedia.org/wiki/Vorlage:Patent -->
 				<if type="patent">
 					<group prefix="{{Patent | " suffix="}}" delimiter=" | ">
 						<!-- <text variable="country" prefix="Land = "/> -->
@@ -164,6 +166,8 @@
 				</if>
 				<!-- ########################################################### -->
 				<!-- Internetquellen & Websites -->
+				<!-- https://de.wikipedia.org/wiki/Vorlage%3AInternetquelle -->
+				<!-- Abstract wird als '1' unbenutzer Parameter importiert. Möglichkeit wäre Titelergänzung (titelerg) -->
 				<else-if type="webpage post-weblog post">
 					<group prefix="{{Internetquelle | " suffix="}}" delimiter=" | ">
 						<text macro="author" prefix="autor = "/>
@@ -181,6 +185,7 @@
 				</else-if>
 				<!-- Alle anderen Typen für als Literatur ausgeben -->
 				<!-- keiner der oben genannten Fälle -->
+				<!-- https://de.wikipedia.org/wiki/Vorlage:Literatur -->
 				<else>
 					<group prefix="{{Literatur | " suffix="}}" delimiter=" | ">
 						<group delimiter=" | ">
@@ -212,7 +217,7 @@
 								<text variable="collection-number" prefix="BandReihe = "/>
 								<text variable="publisher-place"  prefix="Ort = " />
 								<text variable="publisher"  prefix="Verlag = " />
-								<date variable="issued"  prefix="Jahr = " >
+								<date variable="issued"  prefix="Datum = " >
 									<date-part name="year"/>
 								</date>
 								<text variable="ISBN" prefix="ISBN = "/>
@@ -233,7 +238,7 @@
 								<text variable="publisher-place"  prefix="Ort = " />
 								<text variable="publisher"  prefix="Verlag = " />
 								<date variable="issued">
-									<date-part name="year" prefix="Jahr = "/>
+									<date-part name="year" prefix="Datum = "/>
 								</date>
 								<text variable="ISBN" prefix="ISBN = "/>
 								<text variable="page" prefix="Seiten = "/>
