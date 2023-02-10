@@ -2,7 +2,7 @@
 <style
 	xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="de-DE">
 	<info>
-		<title>Wikipedia Templates (https://de.wikipedia.org/wiki/Vorlage:Literatur) - 2022e</title>
+		<title>Wikipedia Templates (https://de.wikipedia.org/wiki/Vorlage:Literatur) - 2022f</title>
 		<id>https://www.zotero.org/styles/wikipedia-templates_Vorlage.Literatur</id>
 		<!-- Referenzen & Dokumentation -->
 		<link href="https://www.zotero.org/styles/wikipedia-templates_Vorlage.Literatur" rel="self"/>
@@ -22,13 +22,13 @@
 		</contributor>
 		<category field="generic-base"/>
 		<category citation-format="author-date"/>
-		<updated>2022-07-04T12:00:00+00:00</updated>
+		<updated>2022-11-29T12:00:00+00:00</updated>
 		<summary>Style following de.Wikipedia WP:Zitierregeln</summary>
 		
 <!--
 * CSL-Skipt zum Export von Datenbankeinträgen in Zotero in eine Vorlage (Literatur, Internetquelle und Patent) der deutschsprachigen Wikipedia
-* Version: 0.25, 2022e
-* Datum: 2022-07-04
+* Version: 0.26, 2022f
+* Datum: 2022-11-29
 * Autor: Cepheiden, 17387349L8764
 * Log: https://de.wikipedia.org/wiki/Benutzer:17387349L8764/Zotero2WikipediaDE
 -->
@@ -166,10 +166,10 @@
 				<!-- Internetquellen & Websites -->
 				<else-if type="webpage post-weblog post">
 					<group prefix="{{Internetquelle | " suffix="}}" delimiter=" | ">
-						<text macro="author" prefix="Autor = "/>
-						<text macro="editor" prefix="Hrsg = "/>
-						<text variable="title" prefix="Titel = "/>
-						<text variable="URL" prefix="Online = "/>
+						<text macro="author" prefix="autor = "/>
+						<text macro="editor" prefix="hrsg = "/>
+						<text variable="title" prefix="titel = "/>
+						<text variable="URL" prefix="url = "/>
 						<text variable="container-title"  prefix="werk = " />
 						<date variable="issued"  prefix="datum = " >
 							<date-part name="year"/>
@@ -197,7 +197,7 @@
 							<!-- <text macro="contributor"/> -->
 							<text macro="translator"/>
 						</group>
-						<text variable="title"  prefix="Titel = " />
+						<text variable="title" prefix="Titel = " />
 						<choose>
 							<!-- ########################################################### -->
 							<!-- Bücher etc. -->
@@ -206,7 +206,7 @@
 								<!-- vorgeschlagen -->
 								<text macro="editor" prefix="Hrsg = "/>
 								<!-- vorgeschlagen -->
-								<text macro="volumes"  prefix="Band = " />
+								<text macro="volumes"  prefix="BandReihe = " />
 								<text macro="edition"  prefix="Auflage = " />
 								<text variable="collection-title" prefix="Reihe = "/>
 								<text variable="collection-number" prefix="BandReihe = "/>
