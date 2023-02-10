@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="de-DE">
   <info>
-    <title>Wikipedia Templates (https://de.wikipedia.org/wiki/Vorlage:Literatur) - 2022c</title>
+    <title>Wikipedia Templates (https://de.wikipedia.org/wiki/Vorlage:Literatur) - 2022d</title>
 	
     <id>https://www.zotero.org/styles/wikipedia-templates_Vorlage.Literatur</id>
 	
@@ -156,7 +156,7 @@
 
 			<!-- <text variable="country" prefix="Land = "/> --> <!-- not specified in https://docs.citationstyles.org/en/v1.0.2/specification.html -->
 			<text variable="jurisdiction" prefix="Land = "/> <!-- Use Extra field, add e.g. {:jurisdiction:US} -->
-            <text variable="number" prefix="V-Nr= "/>
+            <text variable="number" prefix="V-Nr = "/>
             <text macro="author" prefix="Erfinder = "/>
             <text macro="editor" prefix="Anmelder = "/>
             <text variable="title" prefix="Titel = "/>
@@ -215,8 +215,8 @@
 				<text macro="volumes"  prefix="Band = " />
 				<text macro="edition"  prefix="Auflage = " />
 				
-				<text variable="collection-title" prefix="Reihe=  "/>
-				<text variable="collection-number" prefix="BandReihe=  "/>
+				<text variable="collection-title" prefix="Reihe = "/>
+				<text variable="collection-number" prefix="BandReihe = "/>
 				<text variable="publisher-place"  prefix="Ort = " />
 				<text variable="publisher"  prefix="Verlag = " />
 				<date variable="issued"  prefix="Jahr = " >
@@ -236,8 +236,8 @@
 				<text macro="volumes"  prefix="Band = " />
 				<text macro="edition"  prefix="Auflage = " />
 
-				<text variable="collection-title" prefix="Reihe= "/>
-				<text variable="collection-number" prefix="BandReihe= "/>
+				<text variable="collection-title" prefix="Reihe = "/>
+				<text variable="collection-number" prefix="BandReihe = "/>
 				
 				<text variable="publisher-place"  prefix="Ort = " />
 				<text variable="publisher"  prefix="Verlag = " />
@@ -269,7 +269,7 @@
 				<text variable="issue" prefix="Nummer = "/>
 				<!--<text variable="ISSN" prefix="ISSN = "/>-->
 				<text variable="page" prefix="Seiten = "/>
-				<text variable="DOI" prefix="DOI= "/>
+				<text variable="DOI" prefix="DOI = "/>
 				<!--<text variable="arxiv" prefix="arxiv = "/> not supported by CSL 1.01-->
 				<text variable="PMID" prefix="PMID = "/>
 				<!--<text variable="ZDB" prefix="ZDB = "/> not supported by CSL 1.01-->
