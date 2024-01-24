@@ -2,10 +2,10 @@
 <style
 	xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="de-DE">
 	<info>
-		<title>Wikipedia Templates (https://de.wikipedia.org/wiki/Vorlage:Literatur) - 2022g</title>
-		<id>https://www.zotero.org/styles/wikipedia-templates_Vorlage.Literatur</id>
+		<title>Wikipedia Vorlage Literatur (German Wikipedia Citation Style)</title>
+		<id>http://www.zotero.org/styles/wikipedia-vorlage-literatur</id>
 		<!-- Referenzen & Dokumentation -->
-		<link href="https://www.zotero.org/styles/wikipedia-templates_Vorlage.Literatur" rel="self"/>
+		<link href="https://www.zotero.org/styles/wikipedia-vorlage-literatur" rel="self"/>
 		<link href="https://de.wikipedia.org/wiki/Vorlage:Literatur" rel="documentation"/>
 		<link href="https://de.wikipedia.org/wiki/Vorlage:Patent" rel="documentation"/>
 		<link href="https://de.wikipedia.org/wiki/Vorlage%3AInternetquelle" rel="documentation"/>
@@ -23,19 +23,20 @@
 		</contributor>
 		<category field="generic-base"/>
 		<category citation-format="author-date"/>
-		<updated>2022-12-27T12:00:00+00:00</updated>
+		<updated>2022-01-24T12:00:00+00:00</updated>
 		<summary>Style following de.Wikipedia WP:Zitierregeln</summary>
-		
+		<rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+	</info>
 <!--
-* CSL-Skipt zum Export von Datenbankeinträgen in Zotero in eine Vorlage (Literatur, Internetquelle und Patent) der deutschsprachigen Wikipedia
-* Version: 0.31, 2022g
-* Datum: 2022-12-27
+* CSL-Skipt zum Export von Datenbankeinträgen in Zotero in die geeignete Vorlage der deutschsprachigen Wikipedia
+* Einschränkungen: Die Vorlage kann nicht alle Quellen darstellen, bspw. 
+* Version: 0.32, 2024a
+* Datum: 2024-01-24
 * Autor: Cepheiden, 17387349L8764
 * Log: https://de.wikipedia.org/wiki/Benutzer:17387349L8764/Zotero2WikipediaDE
 -->
 
-		<rights>This work is licensed under a Creative Commons Attribution-Share Alike 3.0 License: http://creativecommons.org/licenses/by-sa/3.0/</rights>
-	</info>
+	
 	<locale xml:lang="de">
 		<terms>
 			<term name="anonymous" form="short">o.&#160;A.</term>
@@ -50,12 +51,14 @@
 			<label form="long" prefix=" (" suffix=")"/>
 		</names>
 	</macro>
+<!--	
 	<macro name="author-container">
 		<names variable="container-author" delimiter=", ">
 			<name sort-separator=", " delimiter=", " delimiter-precedes-last="always"/>
 			<label form="long" prefix=" (" suffix=")"/>
 		</names>
 	</macro>
+-->
 	<macro name="editor">
 		<names variable="editor" delimiter=", ">
 			<name sort-separator=", " delimiter-precedes-last="always"/>
